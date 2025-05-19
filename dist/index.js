@@ -112,17 +112,17 @@ const CKEditorMath = ({ value = '', onChange, placeholder = 'Type your content h
                 placeholder: placeholder,
                 readOnly: readOnly,
             } }),
-        react_1.default.createElement("style", { jsx: true, global: true }, `
-        .math-container {
-          margin: 1em 0;
-          padding: 1em;
-          background: #f8f9fa;
-          border-radius: 4px;
-        }
-        .math-display {
-          overflow-x: auto;
-          padding: 0.5em;
-        }
-      `)));
+        react_1.default.createElement("style", null, `
+          .math-container {
+            margin: 1em 0;
+            padding: 1em;
+            background: #f8f9fa;
+            border-radius: 4px;
+          }
+          .math-display {
+            overflow-x: auto;
+            padding: 0.5em;
+          }
+        `)));
 };
 exports.default = CKEditorMath;

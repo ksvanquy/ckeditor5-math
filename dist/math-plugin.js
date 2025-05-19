@@ -20,7 +20,7 @@ class MathPlugin extends ckeditor5_core_1.Plugin {
             document.head.appendChild(script);
         }
         // Add math button to toolbar
-        editor.ui.componentFactory.add('math', locale => {
+        editor.ui.componentFactory.add('math', (locale) => {
             const dropdownView = (0, ckeditor5_ui_1.createDropdown)(locale);
             dropdownView.set({
                 label: t('Math'),
@@ -36,7 +36,7 @@ class MathPlugin extends ckeditor5_core_1.Plugin {
                     action: () => {
                         const mathInput = prompt('Enter math expression (LaTeX format):');
                         if (mathInput) {
-                            editor.model.change(writer => {
+                            editor.model.change((writer) => {
                                 const mathElement = writer.createElement('math', {
                                     math: mathInput
                                 });
